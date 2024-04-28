@@ -1,0 +1,277 @@
+/* Global styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  margin: 5px auto;
+  padding: 0%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px 50px;
+}
+
+/* Logo styles */
+.logo {
+  display: flex;
+}
+
+.logo img {
+  width: 50px;
+  /* Adjust size as needed */
+  height: 50px;
+  margin-right: 10px;
+  border-radius: 100%;
+}
+
+.logo h1 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 24px;
+  margin: auto;
+}
+
+/* Navigation styles */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+}
+
+nav ul li {
+  display: inline;
+  margin-left: 50px;
+}
+
+nav ul li:first-child {
+  margin-left: 0;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Styles for the sub-menu */
+.dropdown {
+  position: relative;
+}
+
+.submenu {
+  width: max-content;
+  margin-top: 5px;
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-top: 5px solid lightgreen;
+  border-radius: 5px;
+  z-index: 1000;
+  /* Ensure sub-menu appears above other content */
+}
+
+.dropdown:hover .submenu {
+  display: block;
+}
+
+.submenu li {
+  display: block;
+  text-align: left;
+  padding: 10px 20px;
+  margin: 0;
+}
+
+.submenu li a {
+  display: block;
+  padding: 10px 20px;
+  color: #333;
+  text-decoration: none;
+}
+
+.submenu li a:hover {
+  background-color: #f0f0f0;
+}
+
+.submenu li:hover a {
+  background-color: #f0f0f0;
+}
+
+/*-----------About-----------*/
+
+#about {
+  margin: 40px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-about {
+  max-width: 50%;
+  text-align: justify;
+  margin-left: 60px;
+}
+
+.right-about {
+  max-width: 50%;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
+
+.right-about img {
+  max-width: 75%;
+}
+
+/*------------Footer-------------*/
+
+#contact {
+  width: 100%;
+  position: relative;
+  margin-bottom: 10px;
+  bottom: 0;
+  height: 48vh;
+  background: #333;
+  color: white;
+}
+
+.elements {
+  margin-top: 0px;
+  padding: 0px 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-elements {
+  display: flex;
+  flex-basis: 70%;
+}
+
+.footer-icons {
+  flex-basis: 50%;
+}
+
+.footer-icons p {
+  text-align: left;
+}
+
+.important-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.important-links nav a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.important-links nav li {
+  margin-bottom: 15px;
+}
+
+.left-elements p i {
+  color: lightskyblue;
+  margin-right: 15px;
+  font-size: 25px;
+}
+
+.social-icons {
+  margin-top: 30px;
+}
+
+.social-icons a {
+  text-decoration: none;
+  font-size: 30px;
+  margin-right: 15px;
+  display: inline-block;
+}
+
+.LinkedIn {
+  color: #0077b5;
+}
+
+.Facebook {
+  color: #3b5998;
+}
+
+.Twitter {
+  color: #808080;
+}
+
+.Instagram {
+  color: #d62976;
+}
+
+.right-elements {
+  flex-basis: 30%;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  border: 0;
+  outline: none;
+  background: #ccc;
+  color: black;
+  border: 2px solid #333;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 3px 0;
+}
+
+.right-elements form button {
+  background: lightgreen;
+  color: #fff;
+  border-radius: 5px;
+  padding: 8px 10px;
+  font-size: medium;
+}
+
+#msg {
+  color: #fff;
+  margin-top: 10px;
+  display: block;
+}
+
+.copyright {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo {
+    margin-bottom: 10px;
+  }
+
+  nav {
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  nav ul {
+    display: inline-block;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+}

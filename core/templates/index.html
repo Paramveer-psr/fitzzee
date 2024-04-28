@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MyFitness Website</title>
+  <link rel="stylesheet" href="../static/home/style.css">
+  <link rel="shortcut icon" href="../static/home/images/Fitness.jpg">
+  <script src="https://kit.fontawesome.com/ec0fb1b1df.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <a href="Home">
+          <img src="../static/home/images/logo.png" alt="MyFitness Logo">
+        </a>
+        <h1>MyFitness</h1>
+      </div>
+      <div class="navigation-menu">
+        <nav>
+          <ul>
+            <li class="dropdown">
+              <a href="#services">Services &#9662;</a>
+              <ul class="submenu">
+                <li><a href="BMI-Calculator">BMI Calculator</a></li>
+                <li><a href="Daily-Calories-Requirement">Daily Calories Requirement</a></li>
+                <li><a href="Disease-Predictor">Disease Predictor</a></li>
+                <li><a href="Workout-Plans">Workout Plans</a></li>
+                <li><a href="Nutrition-Guidance">Nutrition Guidance</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#health-conditions">Health Conditions &#9662;</a>
+              <ul class="submenu">
+                <li><a href="#">Dermatology</a></li>
+                <li><a href="#">Gastroenterology</a></li>
+                <li><a href="#">Gynaecology</a></li>
+                <li><a href="#">Urology</a></li>
+                <li><a href="#">Oncology</a></li>
+                <li><a href="#">Neurology</a></li>
+                <li><a href="#">Cardiology</a></li>
+              </ul>
+            </li>
+            <li><a href="Blog">Blog</a></li>
+            <li><a href="Reviews">Reviews</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <div id="about">
+    <div class="left-about">
+      <h1>About Fitzzee</h1>
+      <p>Welcome to Fitzzee, where we're passionate about health and fitness!
+      <h2>Our Mission</h2>
+      At Fitzzee, we're dedicated to helping individuals lead healthier lives through personalized fitness solutions
+      and insightful health information. Our mission is to empower you to take control of your well-being and achieve
+      your fitness goals.
+      <h2>Who We Are?</h2>
+      Fitzzee was founded in 2023 by a team of health enthusiasts who saw the need for accessible and reliable health
+      and fitness resources. With backgrounds in healthcare, technology, and fitness training, we bring together
+      expertise from diverse fields to provide comprehensive solutions for our users.
+      <h2>Our Commitment</h2>
+      At Fitzzee, we're committed to delivering accurate, up-to-date information and innovative tools to support your
+      health and fitness goals. Whether you're looking to improve your physical fitness, manage a health condition, or
+      simply live a healthier lifestyle, we're here to guide you every step of the way.
+      <span>Join us on the path to better health and fitness with Fitzzee!</span></p>
+    </div>
+    <div class="right-about">
+      <img src="../static/home/images/about.gif" alt="about-img">
+    </div>
+  </div>
+
+  <div id="contact">
+    <div class="elements">
+      <div class="left-elements">
+        <div class="footer-icons">
+          <h2>MyFitness</h2>
+          <p>"Thanks for visiting our website. Your support means the <br>world to us. Explore, enjoy, and stay
+            connected
+            for more <br>exciting updates!"<br><br></p>
+          <p><i class="fas fa-paper-plane"></i>example@domain</p>
+          <p><i class="fa-solid fa-phone"></i>+91-XXXXX XXXXX</p>
+          <div class="social-icons">
+            <a class="LinkedIn" href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a class="Facebook" href="#" target="_blank"><i class="fa-brands fa-facebook"></i></i></a>
+            <a class="Twitter" href="#" target="_blank"><i class="fa-brands fa-square-x-twitter"></i></i></a>
+            <a class="Instagram" href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+          </div>
+          <div class="copyright">
+            <p>Copyright © 2024 MyFitness, All Rights Reserved.</p>
+          </div>
+        </div>
+        <div class="important-links">
+          <h2>Important Links</h2>
+          <nav>
+            <li><a href="#">Disease Predictor</a></li>
+            <li><a href="Daily-Calories-Requirement" target="_blank">Daily Calories Requirement</a></li>
+            <li><a href="BMI-Calculator" target="_blank">BMI Calculator</a></li>
+            <li><a href="#">Workout Plans</a></li>
+            <li><a href="#">Nutrition Guidance</a></li>
+            <li><a href="#">Blogs</a></li>
+          </nav>
+        </div>
+      </div>
+      <div class="right-elements">
+        <h2>Contact Us</h2>
+        <form name="submit-to-google-sheet">
+          <input type="text" name="Name" placeholder="Your Name" required>
+          <input type="email" name="Email" placeholder="Your Email" required>
+          <textarea name="Message" maxlength="200" rows="3" placeholder="Your Message" required></textarea>
+          <button type="submit"><i class="fas fa-paper-plane"></i> <b>Send</b></button>
+        </form>
+        <span id="msg"></span>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="../static/home/script.js"></script>
+</body>
+
+</html>

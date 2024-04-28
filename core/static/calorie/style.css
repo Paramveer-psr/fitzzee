@@ -1,0 +1,135 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px 50px;
+}
+
+.heading {
+  margin: 5px auto;
+  padding: 0%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo styles */
+.logo {
+  display: flex;
+}
+
+.logo img {
+  width: 50px;
+  /* Adjust size as needed */
+  height: 50px;
+  margin-right: 10px;
+  border-radius: 100%;
+}
+
+.logo h1 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 24px;
+  margin: auto;
+}
+
+/* Navigation styles */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+}
+
+nav ul li {
+  display: inline;
+  margin-left: 50px;
+}
+
+nav ul li:first-child {
+  margin-left: 0;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Styles for the sub-menu */
+.dropdown {
+  position: relative;
+}
+
+.submenu {
+  width: max-content;
+  margin-top: 5px;
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-top: 5px solid lightgreen;
+  border-radius: 5px;
+  z-index: 1000;
+  /* Ensure sub-menu appears above other content */
+}
+
+.dropdown:hover .submenu {
+  display: block;
+}
+
+.submenu li {
+  display: block;
+  text-align: left;
+  padding: 10px 20px;
+  margin: 0;
+}
+
+.submenu li a {
+  display: block;
+  padding: 10px 20px;
+  color: #333;
+  text-decoration: none;
+}
+
+.submenu li a:hover {
+  background-color: #f0f0f0;
+}
+
+.submenu li:hover a {
+  background-color: #f0f0f0;
+}
+
+
+.page {
+  display: flex;
+}
+
+.container {
+  text-align: left;
+}
+
+input,
+select,
+button {
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}

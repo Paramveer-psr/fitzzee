@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+/* ---------Nav Menu------------ */
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px 50px;
+}
+
+.header-container {
+  margin: 5px auto;
+  padding: 0%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo styles */
+.logo {
+  display: flex;
+}
+
+.logo img {
+  width: 50px;
+  /* Adjust size as needed */
+  height: 50px;
+  margin-right: 10px;
+  border-radius: 100%;
+}
+
+.logo h1 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 24px;
+  margin: auto;
+}
+
+/* Navigation styles */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+}
+
+nav ul li {
+  display: inline;
+  margin-left: 50px;
+}
+
+nav ul li:first-child {
+  margin-left: 0;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Styles for the sub-menu */
+.dropdown {
+  position: relative;
+}
+
+.submenu {
+  width: max-content;
+  margin-top: 5px;
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-top: 5px solid lightgreen;
+  border-radius: 5px;
+  z-index: 1000;
+  /* Ensure sub-menu appears above other content */
+}
+
+.dropdown:hover .submenu {
+  display: block;
+}
+
+.submenu li {
+  display: block;
+  text-align: left;
+  padding: 10px 20px;
+  margin: 0;
+}
+
+.submenu li a {
+  display: block;
+  padding: 10px 20px;
+  color: #333;
+  text-decoration: none;
+}
+
+.submenu li a:hover {
+  background-color: #f0f0f0;
+}
+
+.submenu li:hover a {
+  background-color: #f0f0f0;
+}
+
+/* ------------------BMI Calculator---------------- */
+
+.page{
+  display: flex;
+  margin: 50px 150px;
+}
+
+.container {
+  flex-basis: 60%;
+  padding: 10px 10px;
+  text-align: center;
+  display: block;
+  height: 45vh;
+  max-width: 400px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+#result{
+  margin-bottom: 10px;
+}
+.container h1{
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.bmi-table img{
+  margin-top: 60px;
+  max-width: 400px;
+  align-items: center;
+  position: relative;
+}
+
+input, select, button {
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  position: relative;
+}
+
+option{
+  border-radius: 5px;
+  border: solid 5px black;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.content{
+  flex-basis: 70%;
+  margin-left: 40px;
+  font-size: large;
+}
+
+.content p{
+  text-align: justify;
+}
+
+.content ul li{
+  text-decoration: none;
+}

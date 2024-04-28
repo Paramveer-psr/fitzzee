@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customer Reviews</title>
+  <link rel="stylesheet" href="../static/Reviews/style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Customer Reviews</h1>
+      <nav>
+        <ul>
+          <li><a href="Home">Home</a></li>
+          <!-- Add more navigation links as needed -->
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="review-form">
+    <div class="container">
+      <h2>Write a Review</h2>
+      <form id="reviewForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        <label for="review">Review:</label>
+        <textarea id="review" name="review" rows="4" required></textarea>
+        <button type="submit">Submit Review</button>
+      </form>
+    </div>
+  </section>
+
+  <section class="customer-reviews">
+    <div class="container">
+      <h2>Customer Reviews</h2>
+      <div id="reviewsList">
+        <!-- Customer reviews will be dynamically inserted here -->
+      </div>
+    </div>
+  </section>
+
+  <script src="../static/Reviews/script.js"></script>
+</body>
+</html>

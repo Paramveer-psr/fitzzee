@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calorie Calculator</title>
+  <link rel="stylesheet" href="../static/calorie/style.css">
+</head>
+
+<body>
+  <header>
+    <div class="heading">
+      <div class="logo">
+        <a href="Home">
+          <img src="../static/home/images/logo.png" alt="MyFitness Logo">
+        </a>
+        <h1>MyFitness</h1>
+      </div>
+      <div class="navigation-menu">
+        <nav>
+          <ul>
+            <li class="dropdown">
+              <a href="#services">Services &#9662;</a>
+              <ul class="submenu">
+                <li><a href="BMI-Calculator">BMI Calculator</a></li>
+                <li><a href="Daily-Calories-Requirement">Daily Calories Requirement</a></li>
+                <li><a href="Disease-Predictor">Disease Predictor</a></li>
+                <li><a href="Workout-Plans">Workout Plans</a></li>
+                <li><a href="Nutrition-Guidance">Nutrition Guidance</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#health-conditions">Health Conditions &#9662;</a>
+              <ul class="submenu">
+                <li><a href="#">Dermatology</a></li>
+                <li><a href="#">Gastroenterology</a></li>
+                <li><a href="#">Gynaecology</a></li>
+                <li><a href="#">Urology</a></li>
+                <li><a href="#">Oncology</a></li>
+                <li><a href="#">Neurology</a></li>
+                <li><a href="#">Cardiology</a></li>
+              </ul>
+            </li>
+            <li><a href="/Blog/">Blog</a></li>
+            <li><a href="/Reviews/">Reviews</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <div class="page">
+    <div class="container">
+      <h1>Calorie Calculator</h1>
+      <label for="age">Age:</label>
+      <input type="number" id="age" placeholder="Enter age"><br><br>
+      <label for="weight">Weight (kg):</label>
+      <input type="number" id="weight" placeholder="Enter weight in kg"><br><br>
+      <label for="height">Height (cm):</label>
+      <input type="number" id="height" placeholder="Enter height in cm"><br><br>
+      <label for="gender">Gender:</label>
+      <select id="gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select><br><br>
+      <label for="activity-level">Activity Level:</label>
+      <select id="activity-level">
+        <option value="sedentary">Sedentary (little or no exercise)</option>
+        <option value="lightly-active">Lightly active (light exercise/sports 1-3 days/week)</option>
+        <option value="moderately-active">Moderately active (moderate exercise/sports 3-5 days/week)</option>
+        <option value="very-active">Very active (hard exercise/sports 6-7 days a week)</option>
+        <option value="extra-active">Extra active (very hard exercise/sports & physical job)</option>
+      </select><br><br>
+      <button onclick="calculateCalories()">Calculate Calories</button><br><br>
+      <div id="result"></div>
+    </div>
+    <div class="content">
+      <h1>Daily Calories Requirement</h1>
+    </div>
+  </div>
+  <script src="../static/calorie/script.js"></script>
+</body>
+
+</html>

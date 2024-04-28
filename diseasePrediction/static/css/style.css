@@ -1,0 +1,148 @@
+/*-----------Header--------------*/
+body {
+	margin: 0;
+	font-family: Arial, sans-serif;
+  }
+
+.container {
+	margin: 5px auto;
+	padding: 0%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header {
+	background-color: #333;
+	color: white;
+	padding: 10px 50px;
+}
+
+/* Logo styles */
+.logo {
+	display: flex;
+}
+
+.logo img {
+	width: 50px;
+	/* Adjust size as needed */
+	height: 50px;
+	margin-right: 10px;
+	border-radius: 100%;
+}
+
+.logo h1 {
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 24px;
+	margin: auto;
+}
+
+/* Navigation styles */
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	text-align: right;
+}
+
+nav ul li {
+	display: inline;
+	margin-left: 50px;
+}
+
+nav ul li:first-child {
+	margin-left: 0;
+}
+
+nav ul li a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 18px;
+}
+
+/* Styles for the sub-menu */
+.dropdown {
+	position: relative;
+}
+
+.submenu {
+	width: max-content;
+	margin-top: 5px;
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border-top: 5px solid lightgreen;
+	border-radius: 5px;
+	z-index: 1000;
+	/* Ensure sub-menu appears above other content */
+}
+
+.dropdown:hover .submenu {
+	display: block;
+}
+
+.submenu li {
+	display: block;
+	text-align: left;
+	padding: 10px 20px;
+	margin: 0;
+}
+
+.submenu li a {
+	display: block;
+	padding: 10px 20px;
+	color: #333;
+	text-decoration: none;
+}
+
+.submenu li a:hover {
+	background-color: #f0f0f0;
+}
+
+.submenu li:hover a {
+	background-color: #f0f0f0;
+}
+
+/*-------------Box--------------------*/
+
+#content-wrapper {
+	margin: 20px 20px;
+	max-width: 600px;
+	border: 1px solid black;
+	height: 100vh;
+}
+
+.card-body h4{
+	text-align: center;
+	background-color: aquamarine;
+}
+/* footer */
+
+#footer{
+	margin: 10px 0px;
+	padding: 10px 0px;
+    border-color: transparent;
+    height: auto;
+    background-color: #333;
+    color: white;
+}
+
+.footer-elements{
+    text-align: center;
+}
+
+.footer-elements p{
+    word-spacing: 20px;
+}
+
+.footer-elements p a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.copyright{
+    text-align: center;
+}
