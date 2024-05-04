@@ -52,101 +52,102 @@
     </div>
   </header>
 
+  <section>
+    <div id="content-wrapper">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="card-body">
+            <h1 class="text-center alert alert-info">Disease Predictor</h1>
 
-  <div id="content-wrapper">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="card-body">
-          <h4 class="text-center alert alert-info">Disease Prediction Panel</h4>
-
-          <br />
-
-          <form method="POST" action="" class="predict_form">
-            {% csrf_token %}
+            <form method="POST" action="" class="predict_form">
+              {% csrf_token %}
 
 
-            <div class="form-group row">
-              <label for="Symptom" class="col-sm-2 col-form-label">1st Symptom</label>
-              <div class="col-sm-6">
-                <input type="text" class="form-control" list="symp" multiple="multiple" name="Symptom1" id="Symptom1"
-                  placeholder="Please Choose Symptom" required="" />
+              <div class="form-group row">
+                <label for="Symptom" class="col-sm-2 col-form-label"><b>1st Symptom: </b></label>
+                <div class="col-sm-6">
+                  <input type="text" class="form-control" list="symp" multiple="multiple" name="Symptom1" id="Symptom1"
+                    placeholder="Please Choose Symptom" required="" />
+                </div>
+                <datalist id="symp">
+                  {% for symp in symptoms %}
+                  <option value="{{symp}}">{{symp}}</option>
+                  {% endfor %}
+                </datalist>
               </div>
-              <datalist id="symp">
-                {% for symp in symptoms %}
-                <option value="{{symp}}">{{symp}}</option>
-                {% endfor %}
-              </datalist>
-            </div>
 
-            <div class="form-group row">
-              <label for="Symptom2" class="col-sm-2 col-form-label">2nd Symptom</label>
-              <div class="col-sm-6">
-                <input type="text" class="form-control" list="symp" name="Symptom2" id="Symptom2"
-                  placeholder="Please Choose Symptom" required="" />
+              <div class="form-group row">
+                <label for="Symptom2" class="col-sm-2 col-form-label"><b>2nd Symptom: </b></label>
+                <div class="col-sm-6">
+                  <input type="text" class="form-control" list="symp" name="Symptom2" id="Symptom2"
+                    placeholder="Please Choose Symptom" required="" />
+                </div>
+                <datalist id="symp">
+                  {% for symp in symptoms %}
+                  <option value="{{symp}}">{{symp}}</option>
+                  {% endfor %}
+                </datalist>
               </div>
-              <datalist id="symp">
-                {% for symp in symptoms %}
-                <option value="{{symp}}">{{symp}}</option>
-                {% endfor %}
-              </datalist>
-            </div>
 
-            <div class="form-group row">
-              <label for="Symptom3" class="col-sm-2 col-form-label">3rd Symptom</label>
-              <div class="col-sm-6">
-                <input type="text" class="form-control" list="symp" name="Symptom3" id="Symptom3"
-                  placeholder="Please Choose Symptom" required="" />
+              <div class="form-group row">
+                <label for="Symptom3" class="col-sm-2 col-form-label"><b>3rd Symptom: </b></label>
+                <div class="col-sm-6">
+                  <input type="text" class="form-control" list="symp" name="Symptom3" id="Symptom3"
+                    placeholder="Please Choose Symptom" required="" />
+                </div>
+                <datalist id="symp">
+                  {% for symp in symptoms %}
+                  <option value="{{symp}}">{{symp}}</option>
+                  {% endfor %}
+                </datalist>
               </div>
-              <datalist id="symp">
-                {% for symp in symptoms %}
-                <option value="{{symp}}">{{symp}}</option>
-                {% endfor %}
-              </datalist>
-            </div>
 
-            <div class="form-group row">
-              <label for="Symptom4" class="col-sm-2 col-form-label">4th Symptom</label>
-              <div class="col-sm-6">
-                <input type="text" class="form-control" multiple="multiple" list="symp" id="Symptom4" name="Symptom4"
-                  placeholder="Please Choose Symptom" required="" />
+              <div class="form-group row">
+                <label for="Symptom4" class="col-sm-2 col-form-label"><b>4th Symptom: </b></label>
+                <div class="col-sm-6">
+                  <input type="text" class="form-control" multiple="multiple" list="symp" id="Symptom4" name="Symptom4"
+                    placeholder="Please Choose Symptom" required="" />
+                </div>
+                <datalist id="symp">
+                  {% for symp in symptoms %}
+                  <option value="{{symp}}">{{symp}}</option>
+                  {% endfor %}
+                </datalist>
               </div>
-              <datalist id="symp">
-                {% for symp in symptoms %}
-                <option value="{{symp}}">{{symp}}</option>
-                {% endfor %}
-              </datalist>
-            </div>
 
-            <div class="form-group row">
-              <label for="Symptom5" class="col-sm-2 col-form-label">5th Symptom</label>
-              <div class="col-sm-6">
-                <input type="text" class="form-control" list="symp" id="Symptom5" name="Symptom5"
-                  placeholder="Please Choose Symptom" required="" />
+              <div class="form-group row">
+                <label for="Symptom5" class="col-sm-2 col-form-label"><b>5th Symptom: </b></label>
+                <div class="col-sm-6">
+                  <input type="text" class="form-control" list="symp" id="Symptom5" name="Symptom5"
+                    placeholder="Please Choose Symptom" required="" />
+                </div>
+                <datalist id="symp">
+                  {% for symp in symptoms %}
+                  <option value="{{symp}}">{{symp}}</option>
+                  {% endfor %}
+                </datalist>
               </div>
-              <datalist id="symp">
-                {% for symp in symptoms %}
-                <option value="{{symp}}">{{symp}}</option>
-                {% endfor %}
-              </datalist>
-            </div>
 
-            <div class="form-group row">
-              <div class="col-sm-10 offset-sm-2">
-                <button type="submit" class="btn btn-primary" id="predict_form">
-                  Predict
-                </button>
+              <div class="form-group row">
+                <div class="col-sm-10 offset-sm-2">
+                  <button type="submit" class="btn btn-primary" id="predict_form">
+                    Predict
+                  </button>
+                </div>
               </div>
-            </div>
 
-            <div id="result" class="col-sm-10 offset-sm-3"></div>
-          </form>
+              <div id="result" class="col-sm-10 offset-sm-3"></div>
+              {% if result %}
+              <h3>You might be having {{result}}</h3>
+              {% endif %}
+            </form>
+          </div>
         </div>
       </div>
+
     </div>
-  </div>
-  {% if result %}
-  <h1>You might be having {{result}}</h1>
-  {% endif %}
+  </section>
+
   <!--footer-->
   <div id="footer">
     <div class="footer-elements">
