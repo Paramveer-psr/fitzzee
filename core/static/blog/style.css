@@ -123,6 +123,34 @@ body {
     padding: 5px 5px;
 }
 
+/* footer */
+
+#footer {
+	margin: 10px 0px;
+	padding: 10px 0px;
+	border-color: transparent;
+	height: auto;
+	background-color: #333;
+	color: white;
+}
+
+.footer-elements {
+	text-align: center;
+}
+
+.footer-elements p {
+	word-spacing: 20px;
+}
+
+.footer-elements p a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.copyright {
+	text-align: center;
+}
+
 @media(max-width: 1250px){
     .blog-box{
         width: 300px;

@@ -1,8 +1,15 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
 /*-----------Header--------------*/
 body {
-	margin: 0;
 	font-family: Arial, sans-serif;
-  }
+	margin: 0;
+	padding: 0;
+}
 
 .container {
 	margin: 5px auto;
@@ -67,7 +74,7 @@ nav ul li a {
 
 .submenu {
 	width: max-content;
-	margin-top: 5px;
+	margin-top: 2px;
 	display: none;
 	position: absolute;
 	top: 100%;
@@ -108,41 +115,83 @@ nav ul li a {
 
 /*-------------Box--------------------*/
 
-#content-wrapper {
-	margin: 20px 20px;
-	max-width: 600px;
-	border: 1px solid black;
-	height: 100vh;
+section {
+	margin: 50px 150px;
 }
 
-.card-body h4{
-	text-align: center;
-	background-color: aquamarine;
+#content-wrapper {
+	border: 1px solid black;
+	display: block;
+	max-width: 35%;
+	height: auto;
+	padding: 10px 10px;
+	border-radius: 5px;
 }
+
+.card-body h1 {
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+.form-group.row {
+	margin-bottom: 10px;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+}
+
+.form-control {
+	margin-left: 10px;
+
+}
+
+label,
+input,
+button {
+	position: relative;
+	padding: 8px;
+	border-radius: 5px;
+}
+
+.predict_form h3 {
+	text-align: center;
+}
+
+button {
+	border-color: transparent;
+	background-color: #4CAF50;
+	color: white;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: #45a049;
+}
+
 /* footer */
 
-#footer{
+#footer {
 	margin: 10px 0px;
 	padding: 10px 0px;
-    border-color: transparent;
-    height: auto;
-    background-color: #333;
-    color: white;
+	border-color: transparent;
+	height: auto;
+	background-color: #333;
+	color: white;
 }
 
-.footer-elements{
-    text-align: center;
+.footer-elements {
+	text-align: center;
 }
 
-.footer-elements p{
-    word-spacing: 20px;
+.footer-elements p {
+	word-spacing: 20px;
 }
 
-.footer-elements p a{
-    text-decoration: none;
-    color: inherit;
+.footer-elements p a {
+	text-decoration: none;
+	color: inherit;
 }
 
-.copyright{
-    text-align: center;
+.copyright {
+	text-align: center;
 }

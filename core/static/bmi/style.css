@@ -5,8 +5,9 @@
 }
 
 body {
-  margin: 0;
   font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 /* ---------Nav Menu------------ */
 header {
@@ -72,7 +73,7 @@ nav ul li a {
 
 .submenu {
   width: max-content;
-  margin-top: 5px;
+  margin-top: 2px;
   display: none;
   position: absolute;
   top: 100%;
@@ -178,4 +179,32 @@ button:hover {
 
 .content ul li{
   text-decoration: none;
+}
+
+/* footer */
+
+#footer {
+	margin: 10px 0px;
+	padding: 10px 0px;
+	border-color: transparent;
+	height: auto;
+	background-color: #333;
+	color: white;
+}
+
+.footer-elements {
+	text-align: center;
+}
+
+.footer-elements p {
+	word-spacing: 20px;
+}
+
+.footer-elements p a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.copyright {
+	text-align: center;
 }
