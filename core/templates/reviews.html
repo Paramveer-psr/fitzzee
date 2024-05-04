@@ -14,7 +14,7 @@
       <h1>Customer Reviews</h1>
       <nav>
         <ul>
-          <li><a href="Home">Home</a></li>
+          <li><a href="{% url 'home' %}">Home</a></li>
           <!-- Add more navigation links as needed -->
         </ul>
       </nav>
@@ -47,8 +47,8 @@
 
   <div id="footer">
     <div class="footer-elements">
-      <p><b><a href="../index.html">Home</a> | <a href="../index.html#about">About</a> | <a
-            href="../Reviews/">Reviews</a> | <a href="../index.html#contact">Contact</a></b></p>
+      <p><b><a href="{% url 'home' %}">Home</a> | <a href="../index.html#about">About</a> | <a
+            href="{% url 'reviews' %}">Reviews</a> | <a href="../index.html#contact">Contact</a></b></p>
     </div>
     <div class="copyright">
       <p>

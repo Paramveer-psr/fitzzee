@@ -12,7 +12,7 @@
   <header>
     <div class="heading">
       <div class="logo">
-        <a href="Home">
+        <a href="{% url 'home' %}">
           <img src="../static/home/images/logo.png" alt="MyFitness Logo">
         </a>
         <h1>MyFitness</h1>
@@ -23,11 +23,11 @@
             <li class="dropdown">
               <a href="#services">Services &#9662;</a>
               <ul class="submenu">
-                <li><a href="BMI-Calculator">BMI Calculator</a></li>
-                <li><a href="Daily-Calories-Requirement">Daily Calories Requirement</a></li>
-                <li><a href="Disease-Predictor">Disease Predictor</a></li>
-                <li><a href="Workout-Plans">Workout Plans</a></li>
-                <li><a href="Nutrition-Guidance">Nutrition Guidance</a></li>
+                <li><a href="{% url 'bmi' %}">BMI Calculator</a></li>
+                <li><a href="{% url 'calorie' %}">Daily Calories Requirement</a></li>
+                <li><a href="{% url 'diagnosis' %}">Disease Predictor</a></li>
+                <li><a href="{% url 'plans' %}">Workout Plans</a></li>
+                <li><a href="{% url 'nutrition' %}">Nutrition Guidance</a></li>
               </ul>
             </li>
             <li class="dropdown">
@@ -42,10 +42,10 @@
                 <li><a href="#">Cardiology</a></li>
               </ul>
             </li>
-            <li><a href="/Blog/">Blog</a></li>
-            <li><a href="/Reviews/">Reviews</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="{% url 'blog' %}">Blog</a></li>
+            <li><a href="{% url 'reviews' %}">Reviews</a></li>
+            <li><a href="{% url 'home' %}">About</a></li>
+            <li><a href="{% url 'home' %}">Contact</a></li>
           </ul>
         </nav>
       </div>
